@@ -4,7 +4,7 @@
 /* Start Landing */
 .landing-page {
     min-height: 100vh;
-    background-image: url('../imgs/02.jpg');
+    background-image: url('../../imgs/02.jpg');
     background-size: cover;
 }
 .landing-page .overlay {
