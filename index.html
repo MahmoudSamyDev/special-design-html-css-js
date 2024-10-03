@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling sheets -->
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/Sections/landing.css" />
+    <link rel="stylesheet" href="css/Sections/about.css" />
+    <link rel="stylesheet" href="css/Sections/skills.css" />
+    <link rel="stylesheet" href="css/Sections/gallery.css" />
+    <link rel="stylesheet" href="css/Sections/timeline.css" />
+    <link rel="stylesheet" href="css/Sections/features.css" />
+    <link rel="stylesheet" href="css/Sections/testimonials.css" />
+    <link rel="stylesheet" href="css/Sections/contact.css" />
+    <link rel="stylesheet" href="css/Sections/footer.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Special Design</title>
+</head>
+<body>
+    <!-- Start Settings box -->
+    <div class="setting-box p-fixed trans-3 bg-white">
+        <div class="setting-gear p-absolute bg-white txt-c">
+            <i class="fa-solid fa-gear fs-15"></i>
+        </div>
+        <div class="setting-content">
+            <div class="option-box p-10 m-20 txt-c">
+                <h4 class="m-0 c-gray">Colors</h4>
+                <ul class="colors-list txt-c p-0">
+                    <li class="active" data-color="#ff9800"></li>
+                    <li class="" data-color="#00bcd4"></li>
+                    <li class="" data-color="#9c27b0"></li>
+                    <li class="" data-color="#e91e63"></li>
+                    <li class="" data-color="#009688"></li>
+                </ul>
+            </div>
+            <div class="option-box p-10 m-20 txt-c">
+                <h4 class="m-0 c-gray">Rondom backgrounds</h4>
+                <div class="random-background">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="option-box p-10 m-20 txt-c">
+                <h4 class="m-0 c-gray">Show Bullets</h4>
+                <div class="bullets-show">
+                    <span class="show active" data-bulletshow="show">Show</span>
+                    <span class="hide" data-bulletshow="hide">Hide</span>
+                </div>
+            </div>
+            <button class="reset-options">Reset Options</button>
+        </div>
+    </div>
+    <!-- Start Nav Bullets -->
+    <div class="nav-buttlets p-fixed">
+        <div class="bullet p-relative" data-section=".landing">
+            <a href="#landing" class="tooltip txt-c">top page</a>
+        </div>
+        <div class="bullet p-relative" data-section=".about-us">
+            <a href="#about-us" class="tooltip txt-c">About us</a>
+        </div>
+        <div class="bullet p-relative" data-section=".skills">
+            <a href="#skills" class="tooltip txt-c">Skills</a>
+        </div>
+        <div class="bullet p-relative" data-section=".gallery">
+            <a href="#gallery" class="tooltip txt-c">Gallery</a>
+        </div>
+        <div class="bullet p-relative" data-section=".timeline">
+            <a href="#timeline" class="tooltip txt-c">Timeline</a>
+        </div>
+        <div class="bullet p-relative" data-section=".features">
+            <a href="#features" class="tooltip txt-c">Features</a>
+        </div>
+        <div class="bullet p-relative" data-section=".testimonials">
+            <a href="#testimonials" class="tooltip txt-c">Testimonials</a>
+        </div>
+    </div>
+    <!-- End Nav Bullets -->
+    <!-- End Settings box -->
+    <!-- Start Landing Section -->
+    <div class="landing-page p-relative" id="landing">
+        <div class="overlay p-absolute w-full h-full"></div>
+        <div class="container">
+            <header class="p-relative d-flex p-10">
+                <div class="logo p-15 fs-20 fw-bold">Special Design</div>
+                <div class="links-container">
+                    <ul class="links pl-0 w-full fs-20">
+                        <li class="d-inline-block mr-20"><a class="c-white active trans-3" href="#about-us">About</a></li>
+                        <li class="d-inline-block mr-20"><a class="c-white trans-3" href="#skills">Skills</a></li>
+                        <li class="d-inline-block mr-20"><a class="c-white trans-3" href="#gallery">Gallery</a></li>
+                        <li class="d-inline-block mr-20"><a class="c-white trans-3" href="#timeline">Timeline</a></li>
+                        <li class="d-inline-block mr-20"><a class="c-white trans-3" href="#features">Features</a></li>
+                        <li class="d-inline-block mr-20"><a class="c-white trans-3" href="#testimonials">Testimonials</a></li>
+                    </ul>
+                    <button class="toggle-menu p-relative">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+        <div class="intro-text p-center txt-c c-white w-full">
+            <h1>We are <span>Creative</span> agency</h1>
+            <p class="fs-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo quae accusamus minima
+            </p>
+        </div>
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start About Us -->
+    <div class="container">
+        <div class="about-us pt-50 pb-50 d-flex" id="about-us">
+            <div class="info-box flex-1 p-30">
+                <h2 class="fw-bold fs-30">About Us</h2>
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, praesentium quas at deserunt possimus eligendi.</p>
+            </div>
+            <div class="img-box flex-1 txt-c">
+                <img src="imgs/about-us.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Our Skills -->
+    <div class="skills pt-50 pb-50 bg-eee" id="skills">
+            <div class="container">
+            <h2 class="fw-bold fs-30 txt-c">Our Skills</h2>
+            <div class="skill-box bg-white p-15 mb-15 flex-between">
+                <div class="skill-name fw-bold txt-c v-center">HTML</div>
+                <div class="skill-progress p-relative of-hidden">
+                    <span class="p-absolute" data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white p-15 mb-15 flex-between">
+                <div class="skill-name fw-bold txt-c v-center">CSS</div>
+                <div class="skill-progress p-relative of-hidden">
+                    <span class="p-absolute" data-progress="95%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white p-15 mb-15 flex-between">
+                <div class="skill-name fw-bold txt-c v-center">javaScript</div>
+                <div class="skill-progress p-relative of-hidden">
+                    <span class="p-absolute" data-progress="70%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white p-15 mb-15 flex-between">
+                <div class="skill-name fw-bold txt-c v-center">mySQL</div>
+                <div class="skill-progress p-relative of-hidden">
+                    <span class="p-absolute" data-progress="50%"></span>
+                </div>
+            </div>
+            <div class="skill-box bg-white p-15 mb-15 flex-between">
+                <div class="skill-name fw-bold txt-c v-center">PhP</div>
+                <div class="skill-progress p-relative of-hidden">
+                    <span class="p-absolute" data-progress="20%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Skills -->
+    <!-- Start Gallery -->
+    <div class="gallery pt-50 pb-50 bg-white txt-c" id="gallery">
+        <div class="container">
+            <h2 class="fw-bold fs-30 txt-c">Our Gallery</h2>
+            <div class="images-box txt-c">
+                <img src="imgs/01.jpg" alt="IMAGE - one">
+                <img src="imgs/02.jpg" alt="IMAGE - two">
+                <img src="imgs/03.jpg" alt="IMAGE - three">
+                <img src="imgs/04.jpg" alt="IMAGE - four">
+                <img src="imgs/05.jpg" alt="IMAGE - five">
+                <img src="imgs/06.png" alt="IMAGE - six">
+                <img src="imgs/07.jpg" alt="IMAGE - seven">
+                <img src="imgs/08.jpg" alt="IMAGE - eight">
+                <img src="imgs/09.jpg" alt="IMAGE - nine">
+                <img src="imgs/10.jpg" alt="IMAGE - ten">
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+    <!-- Start timeline -->
+    <div class="timeline pt-50 pb-50 bg-eee" id="timeline">
+        <div class="container">
+            <h2 class="fw-bold fs-30 txt-c">Our timeline</h2>
+            <div class="timeline-content p-relative of-hidden">
+                <div class="year p-relative fw-bold c-white txt-c">2018</div>
+                <div class="left p-relative float-left">
+                    <div class="content p-20 bg-white">
+                        <h3 class="fw-bold">Testing Heading</h3>
+                        <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus exercitationem, assumenda nisi doloremque ut. Ratione neque cupiditate consequuntur accusamus?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right p-relative float-right">
+                    <div class="content p-20 bg-white">
+                        <h3 class="fw-bold">Testing Heading</h3>
+                        <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus exercitationem, assumenda nisi doloremque ut. Ratione neque cupiditate consequuntur accusamus?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year p-relative fw-bold c-white txt-c">2020</div>
+                <div class="left p-relative float-left">
+                    <div class="content p-20 bg-white">
+                        <h3 class="fw-bold">Testing Heading</h3>
+                        <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus exercitationem, assumenda nisi doloremque ut. Ratione neque cupiditate consequuntur accusamus?</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right p-relative float-right">
+                    <div class="content p-20 bg-white">
+                        <h3 class="fw-bold">Testing Heading</h3>
+                        <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus exercitationem, assumenda nisi doloremque ut. Ratione neque cupiditate consequuntur accusamus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End timeline -->
+    <!-- Start Features -->
+    <div class="features pt-50 pb-50" id="features">
+        <div class="container">
+            <h2 class="fw-bold fs-30 txt-c">Features</h2>
+            <div class="clearfix"></div>
+            <div class="feat-box">
+                <img src="imgs/Icon_01.png" alt="Icon - 1">
+                <h4>Development</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="feat-box">
+                <img src="imgs/Icon_02.png" alt="Icon - 1">
+                <h4>Programming</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="feat-box">
+                <img src="imgs/Icon_03.png" alt="Icon - 1">
+                <h4>Desinging</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="feat-box">
+                <img src="imgs/Icon_04.png" alt="Icon - 1">
+                <h4>Marketing</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="feat-box">
+                <img src="imgs/Icon_05.png" alt="Icon - 1">
+                <h4>Ai</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="feat-box">
+                <img src="imgs/Icon_06.png" alt="Icon - 1">
+                <h4>Language</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, enim.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Testimonials -->
+    <div class="testimonials pt-50 pb-50 bg-eee p-relative" id="testimonials">
+        <div class="container">
+            <h2 class="fw-bold fs-30 txt-left p-relative">Testimonials</h2>
+            <div class="ts-box p-relative float-left bg-white p-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium mollitia, numquam voluptate facilis delectus in. Nostrum atque omnis deserunt quasi.</p>
+                <div class="person-info">
+                    <img src="https://placehold.it/80/DDD" alt="">
+                    <h4>Mahmoud Samy</h4>
+                    <p>CEO @ company</p>
+                </div>
+            </div>
+            <div class="ts-box p-relative float-left bg-white p-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium mollitia, numquam voluptate facilis delectus in. Nostrum atque omnis deserunt quasi.</p>
+                <div class="person-info">
+                    <img src="https://placehold.it/80/DDD" alt="">
+                    <h4>Mahmoud Samy</h4>
+                    <p>CEO @ company</p>
+                </div>
+            </div>
+            <div class="ts-box p-relative float-left bg-white p-20">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium mollitia, numquam voluptate facilis delectus in. Nostrum atque omnis deserunt quasi.</p>
+                <div class="person-info">
+                    <img src="https://placehold.it/80/DDD" alt="">
+                    <h4>Mahmoud Samy</h4>
+                    <p>CEO @ company</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start contact us -->
+    <div class="contact pt-50 pb-50 bg-eee p-relative">
+        <div class="overlay p-absolute w-full h-full"></div>
+        <div class="container p-relative">
+            <h2 class="fw-bold fs-30 txt-c">Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="your name" name="username">
+                    <input type="text" placeholder="your phone" name="phone">
+                    <input type="email" placeholder="your email" name="userEmail">
+                    <input type="text" placeholder="subject" name="subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <input type="submit" value="Send" class="w-full p-10 c-white">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End contact us -->
+    <!-- Start Footer -->
+    <div class="footer txt-c c-white p-30 fw-bold">Created as a practical design for Portfolio: Mahmoud Samy: 2024</div>
+    <!-- End Footer -->
+    <script src="js/main.js"></script>
+    <script src="js/colorsOptions.js"></script>
+    <script src="js/backgroundOptions.js"></script>
+    <script src="js/skillsProgress.js"></script>
+    <script src="js/galleryPopUp.js"></script>
+    <script src="js/navigationBullets.js"></script>
+    <script src="js/showBullets.js"></script>
+    <script src="js/optionsReset.js"></script>
+    <script src="js/navMenu.js"></script>
+</body>
+</html>
