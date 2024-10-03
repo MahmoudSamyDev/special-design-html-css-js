@@ -1,0 +1,21 @@
+:root {
+    --main-color: #ff9800;
+}
+/* Start About Us */
+.about-us .info-box p {
+    line-height: 1.8;
+    color: #767676;
+}
+.about-us .img-box img {
+    width: 250px;
+}
+/* End About Us */
+@media (max-width: 767px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us .info-box {
+        padding: 0;
+    }
+}

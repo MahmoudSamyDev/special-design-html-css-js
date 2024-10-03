@@ -1,0 +1,34 @@
+:root {
+    --main-color: #ff9800;
+}
+/* Start our skills */
+.skills .skill-box .skill-name {
+    width: 140px;
+}
+.skills .skill-box .skill-progress {
+    height: 30px;
+    width: 90%;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+}
+.skills .skill-box .skill-progress span {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color);
+    transition: all 2s;
+}
+/* End our skills */
+
+@media (max-width: 767px) {
+    .skills .skill-box {
+        display: block;
+    }
+    .skills .skill-name,
+    .skills .skill-progress {
+        width: 100%;
+        text-align: center;
+        margin: 0px auto 10px;
+    }
+}

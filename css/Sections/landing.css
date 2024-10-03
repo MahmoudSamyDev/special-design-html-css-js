@@ -1,0 +1,109 @@
+:root {
+    --main-color: #ff9800;
+}
+/* Start Landing */
+.landing-page {
+    min-height: 100vh;
+    background-image: url('../imgs/02.jpg');
+    background-size: cover;
+}
+.landing-page .overlay {
+    background-color: #00000061;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.landing-page header {
+    z-index: 2;
+    color: white;
+}
+.landing-page header .links-container {
+    width: 100%;
+    text-align: right;
+}
+.landing-page header .logo {
+    width: 300px;
+}
+.landing-page header .links li a:hover,
+.landing-page header .links li a.active {
+    color: var(--main-color);
+}
+.landing-page header .toggle-menu {
+    background: none;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
+}
+.landing-page header .toggle-menu.menu-active:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    bottom: -9px;
+    margin: -10px;
+}
+.landing-page header .toggle-menu.menu-active:before {
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    bottom: -9px;
+    left: 20px;
+}
+.landing-page header .toggle-menu:focus {
+    outline: none;
+}
+.landing-page header .toggle-menu span {
+    display: block;
+    background-color: #FFF;
+    height: 4px;
+    margin-bottom: 4px;
+}
+.landing-page .intro-text {
+    z-index: 2;
+}
+.landing-page .intro-text h1 {
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+.landing-page .intro-text h1 span {
+    color: var(--main-color);
+}
+/* End Landing */
+
+/* Start responsivness */
+@media (max-width: 991px) {
+    .landing-page header .links {
+        display: none;
+    }
+    .landing-page header .links.open {
+        background-color: white;
+        padding: 10px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        border-radius: 4px;
+        text-align: left;
+    }
+    .landing-page header .links.open li {
+        display: block;
+        margin: 10px;
+        font-weight: bold;
+    }
+    .landing-page header .links.open li a {
+        color: var(--main-color);
+    }
+    .landing-page header .toggle-menu {
+        display: inline-block;
+        font-weight: bold;
+    }
+}
+/* End responsivness */

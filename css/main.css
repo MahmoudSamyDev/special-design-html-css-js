@@ -1,0 +1,202 @@
+/* Start Resettings */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* End Resettings */
+/* Start custom variables */
+:root {
+    --main-color: #ff9800;
+}
+/* End custom variables */
+/* Start Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+/* End Container */
+/* Start componanets */
+.container h2 {
+    color: var(--main-color);
+    margin: 0 0 50px;
+}
+/* End componanets */
+/* Start settings box */
+.setting-box {
+    left: -200px;
+    top: 0;
+    min-height: 100vh;
+    width: 200px;
+    z-index: 3;
+}
+.open {
+    left: 0;
+}
+.setting-box .setting-gear {
+    right: -30px;
+    top: 100px;
+    cursor: pointer;  
+}
+.setting-box .setting-gear i {
+    padding: 8px 0;
+    width: 30px;
+}
+.setting-box .setting-content .option-box {
+    background-color: #eee;
+}
+.setting-box .setting-content .option-box ul.colors-list {
+    margin: 10px 0 0;
+}
+.setting-box .setting-content .option-box h4 {
+    font-size: 14px;
+}
+.setting-box .setting-content .option-box .yes,
+.setting-box .setting-content .option-box .no,
+.setting-box .setting-content .option-box .show,
+.setting-box .setting-content .option-box .hide {
+    width: 50px;
+    background-color: #009688;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: .5;
+    transition: .3;
+}
+.setting-box .setting-content .option-box span:hover {
+    opacity: 0.7;
+}
+.setting-box .setting-content .option-box span.active {
+    opacity: 1;
+}
+
+.setting-box .setting-content .option-box ul li {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+}
+.setting-box .setting-content .option-box ul li.active {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.setting-box .setting-content .option-box ul li:first-child {
+    background-color: #ff9800;
+}
+.setting-box .setting-content .option-box ul li:nth-child(2) {
+    background-color: #00bcd4;
+}
+.setting-box .setting-content .option-box ul li:nth-child(3) {
+    background-color: #9c27b0;
+}
+.setting-box .setting-content .option-box ul li:nth-child(4) {
+    background-color: #e91e63;
+}
+.setting-box .setting-content .option-box ul li:last-child {
+    background-color: #009688;
+}
+
+.setting-box .reset-options {
+    padding: 10px;
+    border: none;
+    border-radius:8px;
+    color: white;
+    background-color: rgb(171, 29, 29);
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+}
+/* End settings box */
+/* Start nav bullets */
+.nav-buttlets {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    z-index: 3;
+}
+.nav-buttlets .bullet {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--main-color);
+    margin: 10px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.nav-buttlets .bullet .tooltip {
+    width: 120px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 8px 10px;
+    position: absolute;
+    right: 30px;
+    top: -10px;
+    transition: .2s;
+    opacity: 0;
+}
+.nav-buttlets .bullet:hover .tooltip {
+    opacity: 1;
+}
+.nav-buttlets .bullet .tooltip:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+    border-color: transparent transparent transparent var(--main-color);
+}
+/* End nav bullets */
+
+/* Start responsivness */
+/* Start Grid System */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* End Grid System */

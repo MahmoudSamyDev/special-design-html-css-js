@@ -1,0 +1,85 @@
+:root {
+    --main-color: #ff9800;
+}
+/* Start Timeline */
+.timeline .timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%;
+    margin-top: -1px;
+}
+.timeline .timeline-content .year {
+    margin: 20px auto;
+    width: 50px;
+    background-color: var(--main-color);
+    z-index: 2;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+.timeline .timeline-content .left,
+.timeline .timeline-content .right {
+    width: calc(50% - 25px);
+    margin-bottom: 40px;
+}
+.timeline .timeline-content .left::before,
+.timeline .timeline-content .right::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 3px solid var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+}
+.timeline .timeline-content .left::before {
+    right: -36px;
+}
+.timeline .timeline-content .right::before {
+    left: -34px;
+}
+.timeline .timeline-content .content h3 {
+    color: var(--main-color);
+    margin: 0 0 10px;
+}
+.timeline .timeline-content .content p {
+    color: #666;
+}
+.clearfix {
+    clear: both;
+}
+.timeline .timeline-content .left .content:before,
+.timeline .timeline-content .right .content:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    width: 0;
+    height: 0;
+    top: 20px;
+}
+.timeline .timeline-content .left .content:before {
+    right: -20px;
+    border-color: transparent transparent transparent white;
+}
+.timeline .timeline-content .right .content:before {
+    left: -20px;
+    border-color: transparent white transparent transparent;
+}
+/* End Timeline */
+@media (max-width: 767px) {
+    .timeline .timeline-content .left,
+    .timeline .timeline-content .right {
+        width: 100%
+        /* margin-bottom: 40px; */
+    }
+    .timeline .timeline-content .left::before,
+    .timeline .timeline-content .right::before,
+    .timeline .timeline-content .left .content:before,
+    .timeline .timeline-content .right .content:before {
+        display: none;
+    }
+}
