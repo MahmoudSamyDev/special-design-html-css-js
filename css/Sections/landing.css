@@ -66,7 +66,7 @@
     margin-bottom: 4px;
 }
 .landing-page .intro-text {
-    z-index: 2;
+    z-index: 1;
 }
 .landing-page .intro-text h1 {
     font-size: 34px;
@@ -92,6 +92,8 @@
         width: 100%;
         border-radius: 4px;
         text-align: left;
+        height: 800px;
+        z-index: 10;
     }
     .landing-page header .links.open li {
         display: block;
