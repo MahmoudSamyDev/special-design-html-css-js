@@ -158,10 +158,10 @@ body {
     right: 30px;
     top: -10px;
     transition: .2s;
-    opacity: 0;
+    display: none;
 }
 .nav-buttlets .bullet:hover .tooltip {
-    opacity: 1;
+    display: block;
 }
 .nav-buttlets .bullet .tooltip:before {
     content: "";

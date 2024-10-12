@@ -6,6 +6,7 @@
     min-height: 100vh;
     background-image: url('../../imgs/02.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .landing-page .overlay {
     background-color: #00000061;
@@ -106,6 +107,10 @@
     .landing-page header .toggle-menu {
         display: inline-block;
         font-weight: bold;
+    }
+    .landing-page .intro-text p {
+        width: 80%;
+        margin: 40px auto 0;
     }
 }
 /* End responsivness */
