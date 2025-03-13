@@ -7,7 +7,7 @@ This project is a **modern and responsive landing page** designed to enhance the
 - **Clean and well-structured code** for easy customization  
 - **Fully responsive layout** to adapt seamlessly to all screen sizes  
 - **High performance and fast loading speeds** using optimized CSS  
-- **Setting cutomization simple pannal** to change page viualization settings  
+- **Setting customization simple panel ** to change page visualization settings  
 - **Well-organized sections** to present information effectively  
 
 ## 🔹 Page Sections  
@@ -16,9 +16,9 @@ This project is a **modern and responsive landing page** designed to enhance the
 ✔ **Portfolio:** A well-structured display of previous projects  
 ✔ **About:** A concise introduction to the company and its values  
 ✔ **Contact:** A user-friendly way for visitors to get in touch  
-✔ **Gallery:** A Section presenting Gallery for companey portfolio
-✔ **Timeline** Presenting the companey timeline  
-✔ **Features** To present company features can offer  
+✔ **Gallery:** A Section presenting Gallery for company portfolio
+✔ **Timeline:** Presenting the company timeline  
+✔ **Features:** To present company features can offer  
 
 ## 🔹 Technologies Used  
 💠 **HTML5** – For structuring the content  
