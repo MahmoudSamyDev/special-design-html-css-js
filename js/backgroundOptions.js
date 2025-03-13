@@ -24,7 +24,7 @@ function changeBackgroundRandomly() {
 
     // Change background randomly every 10 seconds
     backgroundInterval = setInterval(() => {
-        let random = Math.floor(Math.random() * imgArr.length);
+        let random = Math.floor(Math.random() * 5) === 0 ? 1 : Math.floor(Math.random() * 5);
         landingPage.style.backgroundImage = `url("../imgs/${imgArr[random]}")`;
     }, 10000);
 }
